@@ -696,6 +696,20 @@ a:hover .tooltip,
     .contact {
         padding-top: 1rem;
     }
+.home__info h1, h3, p {
+		text-align: center;
+		justify-content: center;
+		padding: 1.5rem;
+	}
+
+	.home__info p{
+		font-size: 2.7rem;
+	}
+
+	.btn__sci {
+		justify-content: space-around;
+	}
+	
 }
 
 @media screen and (max-width: 400px) {
@@ -741,4 +755,5 @@ a:hover .tooltip,
     .tab__list h3 {
         font-size: 2.3em;
     }
+
 }
