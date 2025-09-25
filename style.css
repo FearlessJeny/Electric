@@ -233,8 +233,13 @@ a:hover .tooltip,
 	box-shadow: none;
 }
 
+.btn__sci {
+	gap: 12rem;
+}
+
 .home__info .btn__sci .sci {
 	margin-left: 2rem;
+	
 }
 
 .home__info .btn__sci .sci a {
@@ -274,7 +279,7 @@ a:hover .tooltip,
 
 .img__box img {
 	position: absolute;
-	top: 3rem;
+	top: 2rem;
 	display: block;
 	width: 55%;
 	object-fit: cover;
@@ -697,20 +702,25 @@ a:hover .tooltip,
     .contact {
         padding-top: 1rem;
     }
-.home__info h1, h3, p {
+
+	.home__info h1, h3, p {
 		text-align: center;
 		justify-content: center;
-		padding: 1.5rem;
+		padding: 0.75rem;
 	}
 
 	.home__info p{
-		font-size: 2.7rem;
+		font-size: 2.3rem;
 	}
 
 	.btn__sci {
 		justify-content: space-around;
 	}
-	
+
+	.btn {
+		box-shadow: none;
+	}
+
 }
 
 @media screen and (max-width: 400px) {
@@ -718,6 +728,10 @@ a:hover .tooltip,
         width: 100%;
         border-radius: 0;
     }
+
+	.btn {
+		box-shadow: none;
+	}
 
     .home__info,
     .about__info {
@@ -728,7 +742,7 @@ a:hover .tooltip,
         font-size: 5rem;
     }
 
-    .home__info .btn__sci {
+    .home__info  {
         flex-direction: column-reverse;
     }
 
@@ -737,9 +751,19 @@ a:hover .tooltip,
         margin-bottom: 2rem;
     }
 
+	
+
+	.home__info p{
+		font-size: 1.7rem;
+	}
+
+	.btn__sci {
+		justify-content: space-around;
+	}
+
     .img__box {
-        width: 30rem;
-        height: 30rem;
+        width: 22rem;
+        height: 22rem;
     }
 
     .about__info .title {
@@ -756,6 +780,17 @@ a:hover .tooltip,
     .tab__list h3 {
         font-size: 2.3em;
     }
-
+	.btn {
+		box-shadow: none;
+	}
 }
 
+
+
+
+
+
+.resume__item img {
+	width: 70%;
+	height: 50%;
+}
