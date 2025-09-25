@@ -287,11 +287,17 @@ a:hover .tooltip,
 /* ================================== */
 .img__box.about__img {
 	background: transparent;
-	box-shadow: 0 0 2rem var(--main-color), inset 0 0 1rem var(--main-color);
+	/* box-shadow: 0 0 2rem var(--main-color), inset 0 0 1rem var(--main-color); */
+	box-shadow: none;
 }
 
 .img__box.about__img img {
 	z-index: -1;
+}
+
+.about__img img {
+	width: 100%;
+	height: 100%;
 }
 
 .title {
@@ -704,10 +710,14 @@ a:hover .tooltip,
         padding-top: 1rem;
     }
 
-	.home__info h1, h3, p {
+	.home__info h1,h2, h3, p {
 		text-align: center;
 		justify-content: center;
 		padding: 0.5rem;
+	}
+
+	.about__info .title {
+		text-align: center;
 	}
 
 	.home__info p{
@@ -795,4 +805,3 @@ a:hover .tooltip,
 	width: 70%;
 	height: 50%;
 }
-
