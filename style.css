@@ -705,7 +705,7 @@ a:hover .tooltip,
     .resume,
     .portfolio {
         padding-top: 1rem;
-        padding-bottom: 22rem;
+        padding-bottom: 25rem;
     }
     .tab__box {
         margin-top: 0;
@@ -732,6 +732,11 @@ a:hover .tooltip,
 
 	.home__info p{
 		font-size: 2.3rem;
+	}
+
+	.about__info .desc {
+		font-size: 2.3rem;
+		line-height: 1;
 	}
 
 	.btn__sci {
@@ -815,3 +820,4 @@ a:hover .tooltip,
 	width: 70%;
 	height: 50%;
 }
+
