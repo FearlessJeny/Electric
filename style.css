@@ -749,7 +749,7 @@ a:hover .tooltip,
 
 	.resume__box.skills {
 	grid-template-columns: repeat(2, 1fr);
-	height: 100%;
+	height: 90%;
 }
 
 }
@@ -825,5 +825,6 @@ a:hover .tooltip,
 	width: 70%;
 	height: 50%;
 }
+
 
 
