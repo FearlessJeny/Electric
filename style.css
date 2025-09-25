@@ -723,7 +723,7 @@ a:hover .tooltip,
 	.home__info h1,h2, h3, p {
 		text-align: center;
 		justify-content: center;
-		padding: 0.5rem;
+		/* padding: 0.5rem; */
 	}
 
 	.about__info .title {
@@ -731,7 +731,7 @@ a:hover .tooltip,
 	}
 
 	.home__info p{
-		font-size: 2.3rem;
+		font-size: 2rem;
 	}
 
 	.about__info .desc {
@@ -752,6 +752,10 @@ a:hover .tooltip,
 	height: 85%;
 }
 
+
+    
+
+    
 }
 
 @media screen and (max-width: 400px) {
@@ -825,6 +829,7 @@ a:hover .tooltip,
 	width: 70%;
 	height: 50%;
 }
+
 
 
 
