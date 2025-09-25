@@ -55,7 +55,7 @@ p {
 .nav {
 	position: fixed;
 	bottom: 2rem;
-	margin-bottom: 3rem;
+	margin-bottom: 1rem;
 	left: 50%;
 	transform: translateX(-50%);
 	width: 40rem;
@@ -794,3 +794,4 @@ a:hover .tooltip,
 	width: 70%;
 	height: 50%;
 }
+
