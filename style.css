@@ -747,6 +747,11 @@ a:hover .tooltip,
 		box-shadow: none;
 	}
 
+	.resume__box.skills {
+	grid-template-columns: repeat(2, 1fr);
+	height: 100%;
+}
+
 }
 
 @media screen and (max-width: 400px) {
@@ -820,4 +825,5 @@ a:hover .tooltip,
 	width: 70%;
 	height: 50%;
 }
+
 
