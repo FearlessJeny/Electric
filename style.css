@@ -435,6 +435,12 @@ a:hover .tooltip,
 	margin-top: 1rem;
 }
 
+.resume__item img {
+	width: 70%;
+	height: 60%;
+	padding-bottom: 2.5rem;
+}
+
 .resume__box.skills {
 	grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
 }
@@ -696,11 +702,12 @@ a:hover .tooltip,
 
     .contact {
         padding-bottom: 16rem;
-    }
+    } 
 }
 
 @media screen and (max-width: 600px) {
 
+	
 
     .resume,
     .portfolio {
@@ -712,8 +719,8 @@ a:hover .tooltip,
     }
 
 	.about__img img {
-		width: 35rem;
-		height: 35rem;
+		width: 30rem;
+		height: 30rem;
 	}
 
     .contact {
@@ -723,7 +730,7 @@ a:hover .tooltip,
 	.home__info h1,h2, h3, p {
 		text-align: center;
 		justify-content: center;
-		/* padding: 0.5rem; */
+		padding: 0.5rem;
 	}
 
 	.about__info .title {
@@ -752,10 +759,6 @@ a:hover .tooltip,
 	height: 85%;
 }
 
-
-    
-
-    
 }
 
 @media screen and (max-width: 400px) {
@@ -825,13 +828,84 @@ a:hover .tooltip,
 
 
 
-.resume__item img {
-	width: 70%;
-	height: 50%;
+
+.reviews {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 20px;
+  border: 3px solid #0B3D61; /* твой фирменный синий */
+  border-radius: 12px;
+  background: #1f2733; /* фон блока */
+  color: #fff;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
 }
 
+.reviews h3 {
+  text-align: center;
+  font-size: 24px;
+  color: #FFB300; /* жёлтый акцент */
+  margin-bottom: 20px;
+}
 
+#reviewForm {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 25px;
+}
 
+#reviewForm input,
+#reviewForm textarea,
+#reviewForm select {
+  padding: 10px;
+  border: 2px solid #0B3D61;
+  border-radius: 6px;
+  font-size: 14px;
+  background: #2d3542;
+  color: #fff;
+}
 
+#reviewForm input::placeholder,
+#reviewForm textarea::placeholder {
+  color: #aaa;
+}
 
+#reviewForm button {
+  background: #FFB300;
+  color: #0B3D61;
+  font-weight: bold;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
 
+#reviewForm button:hover {
+  background: #e0a200;
+}
+
+#reviewsList {
+  margin-top: 20px;
+}
+
+.review-item {
+  background: #2d3542;
+  border: 2px solid #0B3D61;
+  border-radius: 8px;
+  padding: 12px 15px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+
+.review-item strong {
+  color: #FFB300;
+  font-size: 16px;
+}
+
+.review-item hr {
+  border: none;
+  border-top: 1px solid #444;
+  margin-top: 10px;
+}
