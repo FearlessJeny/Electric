@@ -84,4 +84,39 @@ if (whatsappBtn) {
         document.querySelector('.section.active').classList.remove('active');
         sections[2].classList.add('active');
     });
+
 }
+
+
+
+
+
+const form = document.getElementById("reviewForm");
+const reviewsList = document.getElementById("reviewsList");
+
+// Отправка нового отзыва
+form.addEventListener("submit", e => {
+    e.preventDefault();
+    const name = document.getElementById("name").value;
+    const message = document.getElementById("message").value;
+    const stars = document.getElementById("stars").value;
+
+    const newReview = { name, message, stars, timestamp: Date.now() };
+
+    // Записываем в Firebase
+    database.ref("reviews").push(newReview);
+
+    form.reset();
+});
+
+// Получение отзывов в реальном времени
+database.ref("reviews").orderByChild("timestamp").on("value", snapshot => {
+    reviewsList.innerHTML = ""; // очищаем список
+    snapshot.forEach(child => {
+        const review = child.val();
+        const div = document.createElement("div");
+        div.classList.add("review-item");
+        div.innerHTML = `<strong>${review.name}</strong> ${review.stars}<br>${review.message}<hr>`;
+        reviewsList.appendChild(div);
+    });
+});
