@@ -24,6 +24,7 @@
 .fleet__wrapper-2,
 .fleet__wrapper-3{
   margin-bottom: 1rem;
+     overflow: hidden;
 }
 
 .fleet__wrapper-1,
@@ -56,13 +57,8 @@
   box-shadow: 5px 5px 20px rgba(0, 0, 0, .5);
 }
 
-.fleet__wrapper-1 .fleet__images img {
-  max-width: 200px;
-}
-
-.fleet__wrapper-2 .fleet__images img {
-  max-width: 200px;
-}
+.fleet__wrapper-1 .fleet__images img,
+.fleet__wrapper-2 .fleet__images img,
 .fleet__wrapper-3 .fleet__images img {
   max-width: 200px;
 }
@@ -78,4 +74,5 @@
     transform: translateX(calc(-50% - 0.5rem));
   }
 }
+
 
